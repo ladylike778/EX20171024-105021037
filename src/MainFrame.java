@@ -35,7 +35,7 @@ public class MainFrame extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(t1.getText().equals("a")&& new java.lang.String(t2.getPassword()).equals("a"))
-                {MF2 ab=new MF2();
+                {MF2 ab=new MF2(MainFrame.this);
                     ab.setVisible(true);
                     MainFrame.this.setVisible(false);
                 }else{
