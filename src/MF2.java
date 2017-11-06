@@ -147,7 +147,11 @@ public class MF2 extends JFrame {
                         BufferedReader br=new BufferedReader(new FileReader(inFile));
                         String st="";
                         while ((st=br.readLine())!=null){
-                            jta.append(st+"\n");
+                            String[] data=st.split(",");
+                            String[] data2={"書名","作者","出版商","價格","類別"};
+                            for(int i=0;i<data.length;i++){
+                                jta.append(data2[i]+":"+data[i]+"\n");
+                            }
 
                         }
                     }catch (Exception ioe){
