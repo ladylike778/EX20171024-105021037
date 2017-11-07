@@ -176,8 +176,10 @@ public class MF2 extends JFrame {
 
             for(int j=0;j<i;j++){
                 if(la[i].equals(la[j])){
-                    la[i].setText(Integer.toString(rnd.nextInt(48)+1));
-                    }
+                    i--;
+                    }else {
+
+                }
                 }
             }
         }
